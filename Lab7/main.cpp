@@ -1,17 +1,7 @@
-#include "gtest/gtest.h"
+//#include "gtest/gtest.h"
 
 #include "Parser.h"
 #include "MoneyBox.h"
-void Execute();
-
-int main(int argc, char** argv)
-{
-	//testing::InitGoogleTest(&argc, argv);
-	//RUN_ALL_TESTS();
-	//getchar();
-
-	Execute();
-}
 
 void Execute()
 {
@@ -27,9 +17,19 @@ void Execute()
 	{
 		parser.PrintError(e.GetMessage());
 	}
-	catch (std::bad_alloc e)
-	{
-		parser.PrintError(ErrorMessages::MEMORY_ERROR);
-	}
+	//catch (std::bad_alloc& e)
+	//{
+	//	parser.PrintError(ErrorMessages::MEMORY_ERROR);
+	//}
 }
+
+int main(int argc, char** argv)
+{
+	//testing::InitGoogleTest(&argc, argv);
+	//RUN_ALL_TESTS();
+	//getchar();
+
+	Execute();
+}
+
 
