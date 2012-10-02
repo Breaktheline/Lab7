@@ -11,6 +11,11 @@ struct Problem
 		coins = new TList<Coin>();
 	}
 
+	~Problem()
+	{
+		delete coins;
+	}
+
 	int weight;
 	TList<Coin>* coins;
 };
