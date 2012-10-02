@@ -79,12 +79,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Common.cpp" />
+    <ClCompile Include="Parser.cpp" />
     <ClCompile Include="MoneyBox.cpp" />
     <ClCompile Include="MoneyBoxTests.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common.h" />
+    <ClInclude Include="Parser.h" />
     <ClInclude Include="MoneyBox.h" />
     <ClInclude Include="TList.h" />
   </ItemGroup>

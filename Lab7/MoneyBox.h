@@ -5,11 +5,18 @@
 
 struct Coin
 {
+	Coin()
+	{
+		price = 0;
+		weight = 0;
+	}
+
 	Coin(int aPrice, int aWeight)
 	{
 		price = aPrice;
 		weight = aWeight;
 	}
+
 	int price;
 	int weight;
 };
